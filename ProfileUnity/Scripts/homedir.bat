@@ -1,5 +1,6 @@
 @echo off
 REM ********************Liquidware ProfileUnity Config Managment*************************
+REM ********************Uses Home Directory based on VDI.COM\DATA DFS Root***************
 
 if not exist \\vdi.com\data\home\%username%\MyIni md \\vdi.com\data\home\%username%\MyIni
 if not exist \\vdi.com\data\home\%username%\MyIni\profileunity.lic echo f | xcopy \\vdi.com\NETLOGON\ProfileUnity\Configs\User\profileunity.lic \\vdi.com\data\home\%username%\MyIni\profileunity.lic| xcopy \\vdi.com\data\home\%username%\MyIni\profileunity.lic
